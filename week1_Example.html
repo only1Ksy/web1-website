@@ -1,42 +1,84 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>나의 소개 페이지</title>
+        <title>Kim Seoyeon's Page</title>
         <meta charset= "utf-8">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+        <style>
+            body{
+                font-family: "Jua", sans-serif;
+                font-size: large;
+                text-align: center;
+                background-color: rgb(223, 236, 227);
+            }
+            a {
+                color:black;
+                text-decoration: none;
+                transition: color 0.3s ease;
+            }
+            a:hover{ 
+                color: rgb(80, 145, 80);
+            }
+            h1 {
+                font-size: 60px;
+                padding: 40px;
+                border-bottom: 5px solid gray;
+            }
+            .titles{
+                color:green;
+            }
+            #mains:hover{
+                color:darkgreen;
+            }
+            ul {
+                display: inline-block;
+                text-align: left;
+            }
+        </style>
     </head>
     
     <body>
         <img src="ponyo.jpg" width="100%">
     
-        <h1 style = "color: rgb(19, 105, 19);">나의 소개 페이지</h1>
+        <h1 style = "color: rgb(55, 90, 45); text-shadow: 0 4px 8px rgb(161, 190, 172); 
+        -webkit-text-stroke: 0.2px rgb(0, 0, 0);">Kim Seoyeon's Page</h1>
     
-        <h2 style = "color: green;">자기소개</h2>
-        <strong>이화여자대학교 23학번 김서연입니다. 앞으로 잘 부탁드려요!!!</strong><br><br>
+        <h2 class="titles">Self-Introduction</h2>
+        <strong>이화여자대학교 컴퓨터공학과 재학 중인 23학번 김서연입니다.</strong><br><br>
     
-        <h3 style = "color: green;">오늘의 TMI</h3>
+        <h3 class="titles">Today's TMI</h3>
         <img src="majyo.jpg" width="10%"><br><br>
         <u>시험공부</u>하기 싫어요......
         <br><br>
     
-        <h2 style = "color: green;">정보</h2>
-        <p><strong>이름</strong>: 김서연</p>
-        <p><strong>나이</strong>: 21</p>
-        <p><strong>사는 지역</strong>: 경기도 안산</p>
-        <p><strong>전공</strong>: 컴퓨터공학</p>
+        <h2 class="titles">Information</h2>
+        <p><strong>Name</strong>: 김서연</p>
+        <p><strong>Age</strong>: 21</p>
+        <p><strong>Education</strong>: 이화여자대학교</p>
+        <p><strong>Major</strong>: 컴퓨터공학</p>
+        <p><strong>Region</strong>: 경기도 안산시</p>
         <p><strong>MBTI</strong>: ESTP</p><br>
     
-        <h2 style = "color: green;" title = "프로그래밍 기록">프로그래밍 기록</h2>
+        <h2 class="titles" title = "Programming">Programming</h2>
         <ul>
             <li><a href = "https://www.notion.so/12b426556c834f94acf7c80c624f939b?v=980599c5195b45dd8e3f2ae189cda8df&pvs=4"
-            target = "_blank">All</a></li>
+            target = "_blank" id="mains">All</a></li>
             <li>
-                <a href = "https://www.notion.so/10b5c7af760d80ddb832dbfd9470be92?pvs=4"
-                target = "_blank" title = "Frontend Study">Frontend Study</a>
+                <a href = "https://www.notion.so/13b7972663cd80499282f6ab62dcb2ce?pvs=4"
+                target = "_blank" title = "Frontend Study" id="mains">Frontend Study</a>
                 <ol>
                     <li><a href = "html.html" target = "_blank" title = "HTML">HTML</a></li>
                     <li><a href = "css.html" target = "_blank" title = "CSS">CSS</a></li>
                     <li><a href = "javascript.html" target = "_blank" title = "JAVASCRIPT">Javascripts</a></li>
                 </ol>
+            </li>
+            <li>projects
+               <ol>
+                <li><a href = "DnAproject.html" target = "_blanck" title = "DNALABPROJECT">DnA Lab Project</a></li>
+               </ol>
             </li>
         </ul>
         <div id="disqus_thread"></div>
